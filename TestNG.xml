@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Actions" verbose="1">
+    <parameter name="urlAssignment" value="https://sreeleathers.com/"></parameter>
+    
+    <test name="E2E Assignment">
+        <parameter name="invalidUser" value="admin@email.com"></parameter>
+        <parameter name="invalidPassword" value="admin123"></parameter>
+        <classes>
+            <class name="org.sdet.AssignmentTEst"></class>
+        </classes>
+    </test>
+</suite>
